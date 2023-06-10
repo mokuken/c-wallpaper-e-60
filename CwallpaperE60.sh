@@ -1,11 +1,11 @@
 #!/bin/sh
 
-wallDir="$HOME/myfiles/wallpaper/zaki/"
+wallDir="$HOME/myfiles/wallpaper/"
 
 while true
 do
 	randomWallpaper=$(ls $wallDir | shuf -n 1)
 	feh --bg-fill $wallDir$randomWallpaper
-	sleep 60
+	sleep 30
 done
 
